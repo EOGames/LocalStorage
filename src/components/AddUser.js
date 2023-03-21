@@ -1,13 +1,17 @@
 import React from 'react'
-//import { NavLink } from 'react-router-dom';
-//localStorage.clear();
+import Topbar from './Topbar';
+
+
 function AddUser() {
   return (
-    <div className='container'>
-        <label >Name</label> <input id='name' type="text" placeholder='Name' /> <br />
-        <label >Email</label> <input id='email' type="text" placeholder='Email' /> <br />
-        <button onClick={AddUserToList}>Save</button> 
-    </div>
+    <>
+        <Topbar />
+        <div className='container'>
+            <label >Name</label> <input id='name' type="text" placeholder='Name' /> <br />
+            <label >Email</label> <input id='email' type="text" placeholder='Email' /> <br />
+            <button onClick={AddUserToList}>Save</button> 
+        </div>
+    </>
   )
 }
 
@@ -41,11 +45,7 @@ function AddUserToList()
 
     if (data.length <=0)
     {
-        count = 0;
-        // data[0] = {
-        //     'name' : nameV,
-        //     'email': emailV
-        // }
+        count = 0;       
     }
     else
     {
@@ -65,7 +65,6 @@ function AddUserToList()
     localStorage.setItem('data',JSON.stringify(data));
     // count = 0;
 
-   
     ShowData();
 }
 
@@ -81,7 +80,6 @@ function ShowData()
         
             console.log(data);
         
-       
        
     }
     
