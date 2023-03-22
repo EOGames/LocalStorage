@@ -1,7 +1,18 @@
 body
 {
     margin: 0;
-    background-color: #777777;
+    background-color: #585757;
+}
+
+*
+{
+    color: wheat;
+    font-size:1.04em;
+    font-weight: 900;
+    font-family:  'cursive';
+    stroke: .1px rgb(7, 0, 0);
+    -webkit-text-stroke: .1px rgb(1, 1, 1);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0) !important;
 }
 
 .container
@@ -40,8 +51,8 @@ button:hover
 .topbar
 {
     display: flex;
-    background-color: #8f8f8f;
-    width: 45%;
+    background-color: rgb(169, 154, 125);
+    width: 35%;
     height: 7vh;
     
     border-bottom-right-radius: 100%;
@@ -62,31 +73,37 @@ button:hover
     padding: 10px 20px;
 }
 
-.dataList
+.dataList 
 {
     margin-top: 4vh;
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(0, 0, 0, 0.575);
     /* padding: 2vh; */
-    margin: 4vh;
+    margin:4vh 0vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 table
 {
-    border: 1px dotted rgb(194, 194, 194);
+    width: 85%;
+    margin: 0%;
 }
 
-td
+.th1
 {
-    border:  1px dotted #757575;
+    width: 5%;
+    /* background-color: rebeccapurple; */
 }
 
 .td1
 {
-    width: 15%;
+    width: 25vw;
 }
 .td2
 {
-    width: 45%;
+    width: 70vw;
 }
 .td_btn
 {
@@ -114,13 +131,125 @@ td
 
 .editBtn
 {
-    background-color: rgb(173, 255, 228);
+    background-color: aqua;
 }
 
 .deleteBtn
 {
-    background-color: rgb(255, 133, 111);
+    background-color: rgb(138, 5, 5);
 }
-@media screen and (max-width:600px) {
-    
+
+.buttonHolder
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-items: center; */
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#clearStorage
+{
+    width: 20vh;
+    font-weight: 900;
+    color: wheat;
+
+}
+
+#savebtn
+{
+    width: 29%;
+    background-color: #DF9E69;
+}
+
+#updateBtn
+{
+   width: 29%;
+}
+
+.homeText
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    /* height: 20vh; */
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.homeText p
+{
+    color: wheat;
+    width: 85%;
+    height: 70%;
+    /* font-size: vw; */
+    text-overflow:inherit;
+    border: 5px dotted #757575;
+  
+    padding: 5px;
+}
+
+* Button:active
+{
+    background-color: red;
+}
+@media screen and (max-width:1200px) {
+        .topbar
+    {
+        width: 75%;        
+    }
+
+    .nav
+    {
+        padding: 2vw 2.5vw;
+    }
+
+    #name 
+    {
+        width: 45%;
+    }
+
+    #email
+    {
+        width: 45%;
+    }
+    *
+    {
+        color: wheat;
+        font-size:1em;
+        /* font-weight: 900; */
+        font-family:  'cursive';
+        stroke: 1px rgb(7, 0, 0);
+        -webkit-text-stroke: .1px rgb(3, 0, 0);
+        /* text-shadow: 2px 2px 5px rgb(18, 0, 0) !important; */
+    }
+
+    #savebtn
+    {
+        width: 29%;
+        background-color: #DF9E69;
+    }
+
+    #updateBtn
+    {
+       width: 29%;
+    }
+
+     .editBtn
+    {           
+       color: rgb(255, 0, 0) !important;
+       font-size: .59em !important; 
+    }
+
+    .deleteBtn
+    {
+        color: wheat !important;
+        font-size: .59em !important;     
+       text-align: center;
+    }
+
 }

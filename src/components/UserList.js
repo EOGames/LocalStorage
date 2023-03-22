@@ -51,8 +51,8 @@ function Delete(id)
       <table>
          <thead>
 
-         <tr>
-            <th>No.</th>
+         <tr className='row'>
+            <th className='th1'>No.</th>
             <th>Name</th>
             <th>Email</th>
             <th>Action</th>
@@ -65,7 +65,7 @@ function Delete(id)
             {
                user.map((usr,index) =>
                
-                  <tr key={index}>                  
+                  <tr className='row' key={index}>                  
                      <td >{index}</td>
                      <td className='td1'>{usr.name}</td>
                      <td className='td2'>{usr.email}</td>

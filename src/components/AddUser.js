@@ -9,7 +9,7 @@ function AddUser() {
         <div className='container'>
             <label >Name</label> <input id='name' type="text" placeholder='Name' /> <br />
             <label >Email</label> <input id='email' type="text" placeholder='Email' /> <br />
-            <button onClick={AddUserToList}>Save</button> 
+            <button id='savebtn' onClick={AddUserToList}>Save</button> 
         </div>
     </>
   )

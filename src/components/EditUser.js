@@ -91,7 +91,7 @@ LoadData();
         <div className='container'>
                 <label >Name</label> <input id='name' type="text" placeholder='Name' defaultValue={nameV} /> <br />
                 <label >Email</label> <input id='email' type="text" placeholder='Email' defaultValue={emailV} /> <br />
-                <button onClick={UpdateUser}>Update</button> 
+                <button id='updateBtn' onClick={UpdateUser}>Update</button> 
         </div>
     </>
   )
