@@ -184,7 +184,7 @@ table
 .homeText p
 {
     color: wheat;
-    width: 85%;
+    width: 55%;
     height: 70%;
     /* font-size: vw; */
     text-overflow:inherit;
@@ -250,6 +250,11 @@ table
         color: wheat !important;
         font-size: .59em !important;     
        text-align: center;
+    }
+
+        .homeText p
+    {
+        width: 85%;
     }
 
 }
