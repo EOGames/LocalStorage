@@ -81,7 +81,7 @@ LoadData();
         localStorage.removeItem('edit_id');
     }
 
-    // nav('/database');
+    window.location.href ='/database';
 }
   
     

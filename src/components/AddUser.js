@@ -82,5 +82,5 @@ function ShowData()
         
        
     }
-    
+    window.location.href ='/database';
 }
