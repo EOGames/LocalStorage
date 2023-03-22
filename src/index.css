@@ -41,7 +41,7 @@ button:hover
 {
     display: flex;
     background-color: #8f8f8f;
-    width: 35%;
+    width: 45%;
     height: 7vh;
     
     border-bottom-right-radius: 100%;
@@ -66,17 +66,18 @@ button:hover
 {
     margin-top: 4vh;
     background-color: rgba(255, 255, 255, 0.575);
-    padding: 2vh;
+    /* padding: 2vh; */
+    margin: 4vh;
 }
 
 table
 {
-    border: 1px dotted black;
+    border: 1px dotted rgb(194, 194, 194);
 }
 
 td
 {
-    border:  1px dotted #fa2727;
+    border:  1px dotted #757575;
 }
 
 .td1
@@ -87,11 +88,18 @@ td
 {
     width: 45%;
 }
+.td_btn
+{
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+}
 .td_btn button
 {
-    width: 100px;
-    height: 25px;
-    margin-left: 10px;
+    width: 45%;
+    height: 5vh;
+    margin-left: 1vw;
+    font-size: 1.5vw;
     font-weight: 900;
     
 }
@@ -112,4 +120,7 @@ td
 .deleteBtn
 {
     background-color: rgb(255, 133, 111);
+}
+@media screen and (max-width:600px) {
+    
 }
