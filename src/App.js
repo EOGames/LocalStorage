@@ -30,7 +30,7 @@ function Home() {
 
     <div className="homeText"> 
         <p>
-           This CRUD System is made using Browser local storage. If you want to save all data saved with this website please click 'clear old Storage' button at bottom of screen.
+           This CRUD System is made using Browser local storage. If you want to delete all data saved by this website please click 'clear old Storage' button at bottom of screen.
            Please Choose Options from Header Bar. Thank You. By Mandeep Singh
         </p>     
     </div>
